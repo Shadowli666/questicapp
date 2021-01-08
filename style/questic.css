@@ -1,0 +1,49 @@
+.main-title{
+	font-family: "BlackChancery";
+	font-size: 68px;
+	text-align: center;
+	margin : 25px 0 0 0;
+}
+
+.sub-title{
+	font-family: "Abhaya Libre";
+	font-size: 35px;
+	font-weight: 300;
+	text-align: center;
+	margin : 15px 0 15px 0;
+}
+
+.quest-text{
+	font-family: "Abhaya Libre";
+	font-size: 20px;
+}
+
+#qstName{
+	font-size: 25px;
+	height: 45px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+.bordered{
+	border: solid 1px lightgray;
+	border-radius: 5px 5px;
+}
+
+.principal{
+	color: #11ceee;
+}
+
+.secondary{
+	color: #77ceee;
+}
+
+#nObjectives{
+	text-align: center;
+}
+
+.footer{
+	background-color: #222;
+	height: 250px;
+}
