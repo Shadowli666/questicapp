@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "BlackChancery";
+  src: url("BLKCHCRY.TTF");
+}
+
 .main-title{
 	font-family: "BlackChancery";
 	font-size: 68px;
