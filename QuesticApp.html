@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="./css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="./style/questic.css">
 	<title>QuesticApp</title>
 </head>
@@ -30,11 +30,11 @@
 				</div>
 
 				<div class="form-group row my-5 text-center">
-					<label for="qstPrincipal" class="quest-text form-control-label col-sm-3">Misión principal:
-						<input type="radio" name="qstSelector" id="qstPrincipal" checked value="Principal">
+					<label for="qstPrincipal" class="quest-text form-check-label col-sm-3">Misión principal:
+						<input type="radio" class="form-check-input" name="qstSelector" id="qstPrincipal" checked value="Principal">
 					</label>
-					<label for="qstSecondary" class="quest-text form-control-label col-sm-3">Misión secundaria:
-						<input type="radio" name="qstSelector" id="qstSecondary" value="Secundaria">
+					<label for="qstSecondary" class="quest-text form-check-label col-sm-3">Misión secundaria:
+						<input type="radio" class="form-check-input" name="qstSelector" id="qstSecondary" value="Secundaria">
 					</label>
 
 					<label for="nObjectives" class="quest-text form-control-label col-sm-3">Número de Objetivos:
@@ -49,19 +49,19 @@
 			</form>
 		</div>
 		<hr class="m-y-md">
-		<div class="container quest-container my-5">
+		<div class="container my-5">
 			<div class="quest-container-title">
 				<h3>Misiones en curso:</h3>
 			</div>
 			<div class="container px-4 py-2 my-3">
 				<h4 class="text-primary">Misión Principal</h4>
-				<ul id="qstPrincipalView">
-					<li class="qItem">Aún no tienes nada!</li>
-				</ul>
+					<div id="quest-container-principal">
+						
+					</div>
 				<h4 class="text-muted">Misión Secundaria</h4>
-				<ul>
-					<li>Aún no tienes nada!</li>
-				</ul>
+				<div id="quest-container-secondary">
+						
+					</div>
 			</div>
 		</div>
 	</main>
@@ -70,9 +70,8 @@
 	<footer class="footer container mx-auto py-3" style="width: 250px;">
 		<a href="index.html" role="button" class="mx-auto" style="width: 100px;">Volver a la página principal</a> 	
 	</footer>
-	<!-- jQuery first, then Bootstrap JS. -->
-	<script src="./js/jquery-3.5.1.min.js"></script>
-	<script src="./js/bootstrap.bundle.js"></script>
+	<!--Bootstrap JS. -->
+	<script src="./bootstrap/js/bootstrap.bundle.js"></script>
 	<!-- Scripts for the app -->
 	<script src="./script/questic.js"></script>
 </body>
