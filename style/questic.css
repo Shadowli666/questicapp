@@ -1,6 +1,16 @@
+/*FontFace*/
 @font-face {
   font-family: "BlackChancery";
-  src: url("BLKCHCRY.TTF");
+  src: url("fonts/BLKCHCRY.TTF");
+}
+
+@font-face {
+	font-family: "Abhaya Libre";
+	src: url("fonts/AbhayaLibre-Regular.ttf");
+}
+
+.divisor{
+	border-top: solid .5px rgba(86,75,75,.5);
 }
 
 .main-title{
