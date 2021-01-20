@@ -1,7 +1,7 @@
 /*FontFace*/
 @font-face {
-  font-family: "BlackChancery";
-  src: url("fonts/BLKCHCRY.TTF");
+	font-family: "BlackChancery";
+	src: url("fonts/BLKCHCRY.TTF");
 }
 
 @font-face {
@@ -9,12 +9,19 @@
 	src: url("fonts/AbhayaLibre-Regular.ttf");
 }
 
+body{
+	color: #fff;
+	background-color: #17181c;
+}
+
+
 .divisor{
-	border-top: solid .5px rgba(86,75,75,.5);
+	border-top: solid 2px rgb(150,150,150);
 }
 
 .main-title{
 	font-family: "BlackChancery";
+	color: 	#349e2c;
 	font-size: 68px;
 	text-align: center;
 	margin : 25px 0 0 0;
@@ -27,6 +34,31 @@
 	text-align: center;
 	margin : 15px 0 15px 0;
 }
+
+#btn-start {
+	transition: 0.25s;
+	background-color: inherit;
+	border-color: #10FF00;
+	box-shadow: -0.3em 0.3em 0.8em -0.4em #1AFF00;
+	color: 	#10FF00;
+}
+
+#btn-add{
+	transition: 0.25s;
+	background-color: inherit;
+	border-color: #10FF00;
+	color: 	#10FF00;
+}
+
+#btn-start:hover,
+#btn-start:focus,
+#btn-add:hover,
+#btn-add:focus{
+	color: #fff;
+	box-shadow: 0 0.5em 0.5em -0.4em #10FF00;
+	transform: translateY(-0.25em);
+}
+
 
 .quest-text{
 	font-family: "Abhaya Libre";
@@ -41,6 +73,31 @@
 	border-right: none;
 }
 
+#qstContent,
+#nObjectives{
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-radius: unset;
+	background-color: inherit;
+}
+#qstContent:focus,
+#nObjectives:focus{
+	box-shadow: none;
+	border-color: #349e2c;
+}
+
+#qstPrincipal:checked,
+#qstSecondary:checked{
+	background-color: #349e2c;
+    border-color: #349e2c;
+}
+
+#qstPrincipal:focus,
+#qstSecondary:focus{
+	border: none;
+	box-shadow: none;
+}
 .bordered{
 	border: solid 1px lightgray;
 	border-radius: 5px 5px;
@@ -52,6 +109,19 @@
 
 .secondary{
 	color: #77ceee;
+}
+
+.footer-link{
+	color: 	#349e2c;
+}
+.footer-link:hover,
+.footer-link:focus{
+	color: 	#10FF00;
+
+}
+.principal{
+	color: 	#349e2c;
+
 }
 
 #nObjectives{
