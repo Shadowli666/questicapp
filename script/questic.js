@@ -50,15 +50,17 @@ const addElement = () => {
 	const divContent = document.createElement("div");
 	divContent.className = "col-lg-6"
 	divContent.textContent = `${var1.content}`;
-  	divRow.insertAdjacentElement('beforeend', divContent);
+	divRow.insertAdjacentElement('beforeend', divContent);
 
-  	if (var1.nObj != "") {
-			const divObj = document.createElement("div");
-			divObj.className = "col-lg-3";
-			divObj.textContent = `N de objetivos: ${var1.nObj}`
-			divRow.insertAdjacentElement("beforeend",divObj);
+	if (var1.nObj != "") {
+		const divObj = document.createElement("div");
+		divObj.className = "col-lg-3";
+		divObj.textContent = `(0/${var1.nObj})`
+		divRow.insertAdjacentElement("beforeend",divObj);
+	}
+	const checkIco = document.createElement("i");
+			checkIco.className = `bi-check-square-fill checkIco`;
+			divRow.insertAdjacentElement("afterbegin",checkIco);
 		}
 
-}
-
-init();
+		init();
