@@ -1,6 +1,5 @@
 # QuesticApp
 QuesticApp es una aplicación para organizar tareas diarias que quieras realizar de manera divertida!
----
 
 Esta es mi primera web app así que pueden haber fallos o errores, por favor notificarme si es así.
 
