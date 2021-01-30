@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,13 +10,14 @@
 	<link rel="stylesheet" type="text/css" href="./style/questic.css">
 	<title>QuesticApp</title>
 </head>
+
 <body>
 	<!-- Init of Header -->
 	<header id="header">
 		<hgroup>
 			<h1 class="main-title">QuesticApp</h1>
 			<h2 class="sub-title">Tu viaje comienza aquí!</h2>
-		</hgroup>	
+		</hgroup>
 
 		<div class="divisor my-3"></div>
 	</header>
@@ -27,23 +29,30 @@
 			<form>
 				<div class="form-group row my-3">
 					<div class="col-sm-12">
-						<input class="form-control quest-text text-center text-white" id="qstContent" type="text" name="input-quest" placeholder="Describe tu próxima misión...">				
+						<input class="form-control quest-text text-center text-white" id="qstContent" type="text"
+							name="input-quest" placeholder="Describe tu próxima misión...">
+						<div class="alert alert-danger mt-1" id="alert" hidden>
+
+						</div>
 					</div>
 				</div>
 
 
 				<div class="form-group row my-5 text-center">
 					<label for="qstPrincipal" class="quest-text form-check-label col-sm-3">Misión principal:
-						<input type="radio" class="form-check-input" name="qstSelector" id="qstPrincipal" checked value="Principal">
+						<input type="radio" class="form-check-input" name="qstSelector" id="qstPrincipal" checked
+							value="Principal">
 					</label>
 					<label for="qstSecondary" class="quest-text form-check-label col-sm-3">Misión secundaria:
-						<input type="radio" class="form-check-input" name="qstSelector" id="qstSecondary" value="Secundaria">
+						<input type="radio" class="form-check-input" name="qstSelector" id="qstSecondary"
+							value="Secundaria">
 					</label>
 
 					<label for="nObjectives" class="quest-text form-control-label col-sm-3">Número de Objetivos:
 					</label>
 					<div class="col-sm-2">
-						<input type="number" name="nObjectives" id="nObjectives" min="0" value="" class="form-control text-white">
+						<input type="number" name="nObjectives" id="nObjectives" min="0" value=""
+							class="form-control text-white">
 					</div>
 				</div>
 				<div class="text-center my-4">
@@ -58,7 +67,7 @@
 			</div>
 			<div class="container px-4 py-2 my-3 quest-text">
 				<h4 class="principal">Misión Principal</h4>
-				<div id="quest-container-principal"> 
+				<div id="quest-container-principal">
 
 				</div>
 				<h4 class="text-muted">Misión Secundaria</h4>
@@ -70,11 +79,13 @@
 	<!-- End of main -->
 	<!-- Init of Footer -->
 	<footer class="footer container text-center py-3">
-		<a href="index.html" role="button" class="footer-link">Volver a la página principal</a> 	
+		<a href="index.html" role="button" class="footer-link">Volver a la página principal</a>
 	</footer>
 	<!--Bootstrap JS. -->
 	<script src="./bootstrap/js/bootstrap.bundle.js"></script>
 	<!-- Scripts for the app -->
+	<script src="./script/quest.js"></script>
 	<script src="./script/questic.js"></script>
 </body>
+
 </html>
