@@ -7,7 +7,7 @@ class Quest {
         this.nObj = nObj;
         this.qstatus = qstatus;
     }
-
+    /*adds element in DOM*/
     addElement(dataQuest) {
 
         let var1 = dataQuest[dataQuest.length - 1];//Para almacenar el ultimo objeto Quest
@@ -30,9 +30,16 @@ class Quest {
             divObj.textContent = `(0/${var1.nObj})`
             divRow.insertAdjacentElement("beforeend", divObj);
         }
+        //creates the check icon
         const checkIco = document.createElement("i");
         checkIco.className = `bi-check-square-fill checkIco`;
         divRow.insertAdjacentElement("afterbegin", checkIco);
+        //creates the delete icon
+        const delIco = document.createElement("i")
+    }
+
+    deleteElement(dataQuest){
+
     }
 
     getMsg(alert, msg) {
