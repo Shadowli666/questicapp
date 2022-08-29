@@ -125,8 +125,6 @@ body{
 .principal{
 	color: 	#349e2c;
 }
-
-
 .checkIco{
 	transition: 0.5s;
 	font-size: 1em;
@@ -135,4 +133,19 @@ body{
 .checkIco:hover{
 	transform: rotate(-90deg);
 	color: 	#10FF00;
+}
+
+.delIco{
+	transition: 0.5s;
+	font-size: 1em;
+	width: auto;
+}
+.delIco:hover{
+	transform: rotate(-180deg);
+	transform: translateY(-0.25em);
+	color: 	#ff0000;
+}
+
+.icon{
+	margin-right:5px;
 }

@@ -19,9 +19,9 @@ function get() {
 	const qstPriority = document.getElementById("qstPrincipal");
 
 	if (qstContent.value === '') {
-		quest.getMsg(alert, "No olvides registrar tu misión");
-	} else if (nObjectives.value < 0) {
-		quest.getMsg(alert, "Los objetivos no son negativos");
+		quest.getMsg(alert, "¡Ingresa una misión!");
+	} else if (nObjectives.value < 1) {
+		quest.getMsg(alert, "¡Necesitas al menos 1 objetivo!");
 	} else {
 		document.getElementById("alert").hidden = true;
 		dataQuest.push(new Quest(qstContent.value, qstPriority.checked, nObjectives.value, "ongoing"));

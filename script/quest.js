@@ -24,18 +24,23 @@ class Quest {
         divContent.textContent = `${var1.content}`;
         divRow.insertAdjacentElement('beforeend', divContent);
 
-        if (var1.nObj != "") {
-            const divObj = document.createElement("div");
-            divObj.className = "col-lg-3";
-            divObj.textContent = `(0/${var1.nObj})`
-            divRow.insertAdjacentElement("beforeend", divObj);
-        }
+        const divObj = document.createElement("div");
+        divObj.className = "col-lg-3";
+        divObj.textContent = `(0/${var1.nObj})`
+        divRow.insertAdjacentElement("beforeend", divObj);
+
+        const divButtons = document.createElement("div");
+        divButtons.className = "col-lg-3 text-end";
+        divRow.insertAdjacentElement("beforeend", divButtons);
+
         //creates the check icon
         const checkIco = document.createElement("i");
-        checkIco.className = `bi-check-square-fill checkIco`;
-        divRow.insertAdjacentElement("afterbegin", checkIco);
+        checkIco.className = `bi bi-check-lg checkIco icon`;
+        divButtons.insertAdjacentElement("afterbegin", checkIco);
         //creates the delete icon
         const delIco = document.createElement("i")
+        delIco.className ='bi bi-x-lg delIco icon'
+        divButtons.insertAdjacentElement("beforeend", delIco);
     }
 
     deleteElement(dataQuest){
