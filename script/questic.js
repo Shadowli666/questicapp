@@ -27,7 +27,6 @@ function get() {
 		dataQuest.push(new Quest(qstContent.value, qstPriority.checked, nObjectives.value, "ongoing"));
 		quest.addElement(dataQuest);
 	}
-
 }
 
 
